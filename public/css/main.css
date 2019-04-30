@@ -1,0 +1,563 @@
+/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+.container {
+  margin: 0px auto;
+  min-width: 850px;
+  max-width: 1200px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#header .container {
+  background-color: #39b54a;
+}
+
+#header {
+  background-color: #39b54a;
+  padding: 10px;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+}
+
+.studentInfo {
+  width: 350px;
+  float: left;
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  margin: 10px 10px 0px 0px;
+}
+
+.studentInfo:hover {
+  background-color: #f8f8f8;
+  cursor:pointer;
+}
+
+.studentInfo img {
+  height: 200px;
+  float: left;
+}
+
+.studentInfo p {
+  margin-left: 210px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.info-button {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: lightblue;
+    width: 120px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.info-button p {
+    margin: 0;
+}
+
+.info-button:hover {
+    background-color: #42d4f4;
+}
+
+.options {
+    float: right;
+}
+
+.options p.buy {
+    background-color: yellow;
+    font-family: "Montserrat";
+    padding: 5px 20px;
+}
+
+/* ---------- Stats Page ---------- */
+
+#stats {
+  display: none;
+  width: 100%;
+}
+
+#back {
+  float: right;
+  margin-right: 80px;
+  margin-top: -30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.line {
+    fill: none;
+    stroke-width: 3;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    stroke: #fff;
+    cursor: pointer;
+}
+
+  .focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+.subject {
+    padding: 5px 20px;
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.subject:nth-of-type(1) {
+    background-color: #f4428f;
+}
+
+.subject:nth-of-type(2) {
+    background-color: #ffab00;
+}
+
+.subject:nth-of-type(3) {
+    background-color: #418cf4;
+}
+
+.subject:nth-of-type(4) {
+    background-color: #27b281;
+}
+
+.no-data {
+    margin-top: 50px;
+    font-size: 40px;
+    color: #999;
+}
+
+#modules {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    background-color: #fff;
+}
+
+/* ---------- DROPDOWN MENU ---------- */
+#header {
+    height: 60px;
+}
+#header .container {
+    overflow: visible;
+}
+
+#header h1 {
+    float: left;
+}
+
+#header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    float: right;
+}
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  font-size: 20px;
+    margin-right: 60px;
+    padding: 10px;
+    font-family: "Montserrat";
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: "Open Sans";
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* ----------- LOGIN --------- */
+
+#login {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#login p {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#login input {
+    margin: 10px 0;
+    padding: 10px;
+    font-family: "Open Sans";
+    width: 100%;
+}
+
+.button {
+    font-family: "Montserrat";
+    border: 1px solid green;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/************ MODULES *****************/
+
+.module {
+    margin-top: 20px;
+    width: 44%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+    color: #000;
+}
+
+.module .text {
+    float: left;
+}
+
+.module p strong {
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+.module img.module-pic {
+    width: 100%;
+    max-height: 280px;
+    display: block;
+}
+
+.module img.pdf-icon {
+    height: 50px;
+    float: right;
+    margin-top: 5px;
+}
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

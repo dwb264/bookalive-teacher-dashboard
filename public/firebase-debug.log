@@ -1,0 +1,25 @@
+[debug] [2019-04-29T21:04:56.687Z] ----------------------------------------------------------------------
+[debug] [2019-04-29T21:04:56.690Z] Command:       /usr/local/Cellar/node/10.12.0/bin/node /usr/local/bin/firebase init
+[debug] [2019-04-29T21:04:56.690Z] CLI Version:   6.7.1
+[debug] [2019-04-29T21:04:56.690Z] Platform:      darwin
+[debug] [2019-04-29T21:04:56.690Z] Node Version:  v10.12.0
+[debug] [2019-04-29T21:04:56.691Z] Time:          Mon Apr 29 2019 17:04:56 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-04-29T21:04:56.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-29T21:04:56.698Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-29T21:04:56.698Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Applications/MAMP/htdocs/startup-studio-private/TeacherDashboard/public
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+

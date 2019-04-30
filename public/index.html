@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>BookAlive Teacher Dashboard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div id="header">
+    <div class="container">
+      <h1><a href="index.html">BookAlive Teacher Dashboard</a></h1>
+      <div class="nav">
+        <div class="dropdown">
+          <div class="dropbtn">Modules</div>
+          <div class="dropdown-content">
+            <a href="printouts.html">Download printouts</a>
+            <a href="#" onclick="alert('This feature is coming soon!')">Customize modules</a>
+            <a href="browse.html">Browse modules</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="students">
+      <div class="container"></div>
+      <h2>Class List</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="stats">
+      <h2>Student Stats</h2>
+      <h2 id="back">Back</h2>
+      <p>App usage results for <span id="student-name"></span>.</p>
+      <hr>
+      <p>Filter by subject:
+        <span class="subject">Math</span>
+        <span class="subject">History</span>
+        <span class="subject">Geography</span></p>
+      <hr>
+      <p><i>Mouseover data points to view details about student performance.</i><p>
+      <h2 class="no-data">No data for this student yet!</h2>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
+
+
+
+
+
+
+</html>
